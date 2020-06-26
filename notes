@@ -1,11 +1,16 @@
-TODO: 26/06/2020
+TODO: 25/06/2020
 
-* build a working class - DONE
+* Build a working project - DONE
 * Implement Webdriver - chrome driver - DONE
+   -> CHROME HEADLESS MODE - DONE
 * CONFIG MAVEN - DONE
-* CHROME HEADLESS MODE - DONE
+  -> plugins - junit/reporting
 * github  - DONE
+   -> pull/push request
+   ->update projects
+* Install sql server
 * sql - DONE
+  -> query table
 * JSON - RESEARCHED.
 * JUNIT testrunner - TODO
 * NPM - TODO
