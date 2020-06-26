@@ -1,7 +1,11 @@
+TODO: 26/06/2020
 
-* headless mode - done
-* github - done
-* sql
-*JSON - investigated
-*JUNIT testrunner
-* npm
+* build a working class - DONE
+* Implement Webdriver - chrome driver - DONE
+* CONFIG MAVEN - DONE
+* CHROME HEADLESS MODE - DONE
+* github  - DONE
+* sql - DONE
+* JSON - RESEARCHED.
+* JUNIT testrunner - TODO
+* NPM - TODO
