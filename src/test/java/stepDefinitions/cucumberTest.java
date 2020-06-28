@@ -49,4 +49,11 @@ public class cucumberTest {
         // Write code here that turns the phrase above into concrete actions
     }
 
+    @Given("^I goto BBC site with (.*) and (.*)$")
+    public void i_goto_bbc_site_with (String datatype1, String datatype2) {
+        System.out.println("@Given(\"I goto BBC site\")");
+        System.out.println("data1:" + datatype1);
+        System.out.println("data2:" + datatype2);
+    }
+
 }

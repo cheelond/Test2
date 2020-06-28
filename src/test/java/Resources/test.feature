@@ -21,3 +21,16 @@ Feature: Demo using Cucumber BDD test steps.
     When I select news
     Then I click on sports
     And I see F1 sports
+
+  @Smoketest
+  Scenario Outline: This is a basic test4
+    Given I goto BBC site with <datatype1> and <datatype2>
+    When I select news
+    Then I click on sports
+    And I see F1 sports
+
+    Examples:
+      | datatype1 | datatype2 |
+      | david     | wong      |
+      | michael   | smith     |
+
