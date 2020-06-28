@@ -42,22 +42,22 @@ class FooTest {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-        System.out.println("beforeall - initlised webdriver");;
+        System.out.println("beforeall - initlised webdriver");
     }
 
     @Ignore
     public void gotoBBC() {
-        System.out.printf("***\n");
+        System.out.println("***\n");
         System.out.println("gotoBBC test called");
-        System.out.printf("***\n");
+        System.out.println("***\n");
         driver.get("http://news.bbc.co.uk");
     }
 
     @Test
     public void gotoGoogle() throws IOException {
-        System.out.printf("***\n");
+        System.out.println("***\n");
         System.out.println("gotoGoogle test called");
-        System.out.printf("***\n");
+        System.out.println("***\n");
         driver.get("http://www.google.co.uk");
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         try {
@@ -69,9 +69,9 @@ class FooTest {
 
     @Test
     public void databaseTest(){
-        System.out.printf("***\n");
+        System.out.println("***\n");
         System.out.println("databaseTest test called");
-        System.out.printf("***\n");
+        System.out.println("***\n");
 
         Connection conn = null;
 
