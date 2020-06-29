@@ -2,14 +2,29 @@ package stepDefinitions;
 
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class cucumberTest {
 
     static protected WebDriver driver;
+
+    // https://www.youtube.com/playlist?list=PLhW3qG5bs-L_mFHirOLEYJ7X2rIXu8SR2
+    // not in use.. page factorying
+    // cachelookup== if locator is not going to change.
+    @FindBy(id="Name")
+    @CacheLookup
+    WebElement name;
+
+    // find all the elements
+    @FindBy(partialLinkText = "Name")
+    List<WebElement> myLinks;
 
     @Given("I goto BBC site")
     public void i_goto_bbc_site() {
